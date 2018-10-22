@@ -26,7 +26,7 @@ class Modal {
         await selection.buildForm(modalBody);
     }
 
-    onModalClose(callback){
+    onModalClose(callback) {
         $('[data-id=selection-modal]').on('hidden.bs.modal', callback)
     }
 }
