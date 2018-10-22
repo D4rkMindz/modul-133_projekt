@@ -1,19 +1,25 @@
+/**
+ * Class Utils
+ *
+ * A collection of helper methods
+ */
 class Utils {
-    showLoader(target) {
-        target = target || $('body');
-        const loaderHTML = `<div class="loader"></div>`;
-        target.append(loaderHTML);
-    }
-
-    hideLoader() {
-        $('.loader').remove();
-    }
-
+    /**
+     * Compare two objects like the spaceship operator (<=>)
+     * @param a
+     * @param b
+     * @returns {number}
+     */
     compare(a, b) {
         // Spaceship operator in JS
         return a < b ? -1 : a > b ? 1 : 0;
     }
 
+    /**
+     * Check if an object is empty
+     * @param object
+     * @returns {boolean}
+     */
     empty(object) {
         for (var key in object) {
             if (object.hasOwnProperty(key))

@@ -1,8 +1,21 @@
+/**
+ * Class Modal
+ *
+ * A helper class to create and handle the modal
+ */
 class Modal {
+    /**
+     * Modal class constructor.
+     */
     constructor() {
         this.utils = new Utils();
     }
 
+    /**
+     * Show the selection modal.
+     * @param selection
+     * @returns {Promise<void>}
+     */
     async showModal(selection) {
         // Modal with background click and ESC press disabled
         $('[data-id=selection-modal]').modal({
@@ -10,9 +23,7 @@ class Modal {
             keyboard: false
         });
         const modalBody = $('[data-id=selection-modal-body]');
-        this.utils.showLoader(modalBody);
         await selection.buildForm(modalBody);
-        this.utils.hideLoader();
     }
 
     onModalClose(callback){

@@ -7,7 +7,6 @@
     <title>Calendar app</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
           integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -17,17 +16,17 @@
     <div class="row">
         <h1>Calendar app</h1>
     </div>
-    <article class="row">
+    <div class="row">
         <div class="col-3"></div>
-        <div class="col-6">
+        <section class="col-6">
             <h2>Selection</h2>
-            <section data-id="inline-selection">
-            </section>
-        </div>
+            <article data-id="inline-selection">
+            </article>
+        </section>
         <div class="col-3"></div>
-    </article>
+    </div>
     <div class="col-12">
-        <section data-id="timetable"></section>
+        <div data-id="timetable"></div>
     </div>
 </div>
 <div class="modal" tabindex="-1" role="dialog" data-id="selection-modal">
