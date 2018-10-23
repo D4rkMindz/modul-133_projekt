@@ -14,7 +14,7 @@ $(() => {
                 timetable.loadTimeTable($('[data-id=timetable]'), classId, 'rtl');
             });
             selection.onJobSelection(() => {
-                timetable.clearTimeTable($('[data-id=time-table]'));
+                timetable.clearTimeTable($('[data-id=timetable]'));
             })
         });
     };
